@@ -1,0 +1,12 @@
+write-kubeconfig-mode: "0644"
+debug: true
+cni:
+  - "multus"
+  - "cilium"
+disable-kube-proxy: true
+embedded-registry: true
+kube-apiserver-arg:
+  - "audit-log-path=/var/log/rke2/audit.log"
+  - "audit-log-maxage=40"
+  - "audit-log-maxbackup=15"
+  - "audit-log-maxsize=150"
