@@ -1,4 +1,11 @@
 write-kubeconfig-mode: "0644"
+tls-san:
+  - "cp1"
+  - "cp2"
+  - "cp3"
+  - "cp1.home"
+  - "cp2.home"
+  - "cp3.home"
 debug: true
 cni:
   - "multus"
