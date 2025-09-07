@@ -8,6 +8,8 @@ tls-san:
   - "cp1.home"
   - "cp2.home"
   - "cp3.home"
+disable-kube-proxy: true
+embedded-registry: true
 kube-apiserver-arg:
   - "audit-log-path=/var/log/rke2/audit.log"
   - "audit-log-maxage=40"
