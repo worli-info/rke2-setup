@@ -1,0 +1,15 @@
+server: https://cp1.home:9345
+token: K10f07d244ed11093e8651214836ee213efef6090d40c64bb849cc823fd17513fcf::server:b656f35f967ec682ff4b6f683d843cb7
+write-kubeconfig-mode: "0644"
+tls-san:
+  - "cp1"
+  - "cp2"
+  - "cp3"
+  - "cp1.home"
+  - "cp2.home"
+  - "cp3.home"
+kube-apiserver-arg:
+  - "audit-log-path=/var/log/rke2/audit.log"
+  - "audit-log-maxage=40"
+  - "audit-log-maxbackup=15"
+  - "audit-log-maxsize=150"
