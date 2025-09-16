@@ -18,3 +18,4 @@ kube-apiserver-arg:
   - "audit-log-maxage=40"
   - "audit-log-maxbackup=15"
   - "audit-log-maxsize=150"
+etcd-expose-metrics: true
